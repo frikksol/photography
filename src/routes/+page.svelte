@@ -9,7 +9,9 @@
 
 <div class="min-h-screen min-w-full">
   <div class="p-16 pb-36">
-    <h1 class="text-5xl font-bold text-black">Frikk Herding Photography</h1>
+    <h1 class="font-serif text-5xl font-bold text-black">
+      Frikk Herding Photography
+    </h1>
   </div>
   {#each data?.images as image (image.id)}
     <div class="px-16 pb-36">

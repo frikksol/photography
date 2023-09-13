@@ -3,7 +3,8 @@ module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     fontFamily: {
-      sans: ['Noto Serif', 'serif']
+      serif: ['Noto Serif', 'serif'],
+      sans: ['Noto Sans', 'sans']
     },
     extend: {
     },
