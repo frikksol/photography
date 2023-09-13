@@ -10,4 +10,4 @@ dist/
 
 # Vercel
 .vercel
-.env.development.local
+.env*.local
