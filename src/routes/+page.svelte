@@ -1,4 +1,6 @@
 <script lang="ts">
+  import Image from "../components/image.svelte";
+
   export let data;
 </script>
 
@@ -22,37 +24,7 @@
       of my photos.
     </p>
   </div>
-  {#each data?.images as image (image.id)}
-    <div class="px-2 pb-24 xl:px-16 xl:pb-36">
-      <img src={image.url} alt={image.id} />
-      <div class="flex">
-        <h1 class="pt-2">
-          {#if image.name}
-            Name: {image.name}
-          {/if}
-          {#if image.camera}
-            - Camera: {image.camera}
-          {/if}
-          {#if image.lens}
-            - Lens: {image.lens}
-          {/if}
-          {#if image.film}
-            - Film: {image.film}
-          {/if}
-          {#if image.shutter_speed}
-            - Shutter: {image.shutter_speed}
-          {/if}
-          {#if image.aperture}
-            - Aperture: {image.aperture}
-          {/if}
-          {#if image.exposure_compensation}
-            - Exposure Comp:{image.exposure_compensation}
-          {/if}
-          {#if image.width && image.height}
-            - Size: {image.width} x {image.height}
-          {/if}
-        </h1>
-      </div>
-    </div>
+  {#each data?.images as imageDto (imageDto.id)}
+    <Image {imageDto} />
   {/each}
 </div>
