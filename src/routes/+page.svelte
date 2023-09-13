@@ -8,8 +8,8 @@
 </svelte:head>
 
 <div class="min-h-screen min-w-full">
-  <div class="p-16 pb-36">
-    <h1 class="pb-24 font-serif text-5xl font-bold text-black">
+  <div class="p-2 pb-24 xl:p-16 xl:pb-36">
+    <h1 class="pb-12 font-serif text-5xl font-bold text-black xl:pb-24">
       Frikk Herding Photography
     </h1>
     <p class="max-w-6xl">
@@ -23,7 +23,7 @@
     </p>
   </div>
   {#each data?.images as image (image.id)}
-    <div class="px-16 pb-36">
+    <div class="px-2 pb-24 xl:px-16 xl:pb-36">
       <img src={image.url} alt={image.id} />
       <div class="flex">
         {#if image.name}
