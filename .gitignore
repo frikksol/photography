@@ -7,3 +7,7 @@ dist/
 
 # osX
 .DS_Store
+
+# Vercel
+.vercel
+.env.development.local
