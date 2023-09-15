@@ -19,12 +19,12 @@
   </div>
   <div>
     {#if imageDto.camera}
-      <h4 class="pt-4 text-center text-xs">
+      <h4 class="pt-3 text-center text-xs">
         Camera: {imageDto.camera}, Lens: {imageDto.lens}
       </h4>
     {/if}
     {#if imageDto.film}
-      <h4 class="pt-2 text-center text-xs">
+      <h4 class="text-center text-xs">
         Film: {imageDto.film}
       </h4>
     {/if}

@@ -11,7 +11,7 @@
 
 <div class="min-h-screen min-w-full">
   <div class="px-6 py-12 xl:p-16">
-    <h1 class="font-serif text-3xl font-bold text-black">
+    <h1 class="font-serif text-3xl font-bold text-black xl:text-center">
       Frikk Herding Photography
     </h1>
   </div>
