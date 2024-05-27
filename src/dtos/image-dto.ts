@@ -5,9 +5,9 @@ export interface ImageDto {
   camera: string;
   lens: string;
   film: string;
-  shutter_speed: string;
-  aperture: string;
-  exposure_compensation: string;
   width: number;
   height: number;
+  rating: number;
+  title: string;
+  visible: boolean;
 }

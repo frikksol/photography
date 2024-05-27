@@ -18,15 +18,11 @@
     />
   </div>
   <div>
-    {#if imageDto.camera}
-      <h4 class="pt-3 text-center text-xs">
-        Camera: {imageDto.camera}, Lens: {imageDto.lens}
-      </h4>
-    {/if}
-    {#if imageDto.film}
-      <h4 class="text-center text-xs">
-        Film: {imageDto.film}
-      </h4>
-    {/if}
+    <h4 class="pt-3 text-center text-xs">
+      Camera: {imageDto.camera}, Lens: {imageDto.lens}
+    </h4>
+    <h4 class="text-center text-xs">
+      Film: {imageDto.film}, Title: {imageDto.title}
+    </h4>
   </div>
 </div>
