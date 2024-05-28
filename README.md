@@ -10,3 +10,19 @@ Running locally:
 npm i
 npm run dev
 ```
+
+## Adding/Updating data
+
+In order to add new images, make sure to log in to gcp, then run
+
+```bash
+./upload-to-gcloud.sh <FILEPATH>
+```
+
+Then add insert statements to `databaseData.sql``
+
+Finally run database migrations with:
+
+```bash
+psql <CONNECTION_STRING> -a -f databaseData.sql
+```
